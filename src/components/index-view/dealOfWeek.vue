@@ -1,5 +1,5 @@
 <template>
-    <section class="deal-of-week set-bg spad" data-setbg="img/time-bg.jpg">
+    <section class="deal-of-week set-bg spad" :style="someStyle">
         <div class="container">
             <div class="col-lg-6 text-center">
                 <div class="section-title">
@@ -36,8 +36,15 @@
 </template>
 
 <script>
+import timebg from '../../../public/assets/img/time-bg.jpg';
 export default {
-
+    data() {
+    return {
+      someStyle: {
+        background:`url(${timebg})`,
+      },
+    };
+  },
 }
 </script>
 

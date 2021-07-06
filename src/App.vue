@@ -2,6 +2,9 @@
   <div id="app">
       <Preloder />
       <HeaderSection />
+
+        <router-view />
+        
       <PartnerLogo />
       <FooterSection />
   </div>
@@ -16,9 +19,11 @@ import HeaderSection from './components/layout/HeaderSection.vue'
 import PartnerLogo from './components/layout/PartnerLogo.vue'
 import FooterSection from './components/layout/FooterSection.vue'
 
+
+
 export default {
   name: 'App',
-  components: 
+  components:   
   {
     Preloder,
     HeaderSection,

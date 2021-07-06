@@ -5,7 +5,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img :src="require('../../../public/assets/img/footer-logo.png')" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -59,12 +59,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <!-- Copyright &copy;{{document.write(new Date().getFullYear())}} All rights reserved | This template is made with  -->
+                            <i class="fa fa-heart-o" aria-hidden="true"></i> by 
+                            <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         </div>
                         <div class="payment-pic">
-                            <img src="img/payment-method.png" alt="">
+                            <img :src="require('../../../public/assets/img/payment-method.png')" alt="">
                         </div>
                     </div>
                 </div>

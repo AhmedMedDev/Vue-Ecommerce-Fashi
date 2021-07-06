@@ -30,7 +30,11 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
-
+/* .hero-items .single-hero-items {
+	height: 725px;
+	padding-top: 210px;
+	background: url('../img/hero-1.jpg');
+} */
 html,
 body {
 	height: 100%;
