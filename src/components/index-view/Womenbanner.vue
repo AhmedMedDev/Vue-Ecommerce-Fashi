@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="product-large set-bg" :data-setbg="require('../../../public/assets/img/products/women-large.jpg')">
+                    <div class="product-large set-bg" :style="setBG">
                         <h2>Women’s</h2>
                         <a href="#">Discover More</a>
                     </div>
@@ -130,14 +130,22 @@
 <script>
 
 import carousel from 'vue-owl-carousel'
+import women_large1 from '../../../public/assets/img/products/women-large.jpg';
 
 export default {
     components: { carousel },
+    data() 
+    {
+        return {
+            setBG: {background:`url(${women_large1})`},      
+        };
+  },
+
 }
 </script>
 
 <style>
-.product-large{
+/* .product-large{
     background: url('../../../public/assets/img/products/women-large.jpg');
-}
+} */
 </style>

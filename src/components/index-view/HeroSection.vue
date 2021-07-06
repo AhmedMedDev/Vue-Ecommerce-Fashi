@@ -4,8 +4,8 @@
             <carousel
                 :loop= "true" :margin= "0"
                 :nav= "false" :items= "1"
-                :dots= "false" :animateOut= 'fadeOut'
-                :animateIn= 'fadeIn' :smartSpeed= "1200"
+                :dots= "false" 
+                :smartSpeed= "1200"
                 :autoHeight= "false"  :autoplay= "true">
                     <div class="single-hero-items set-bg" :style="setBG1">
                         <div class="container">
@@ -71,12 +71,13 @@ export default {
 
     data() 
     {
-    return {
-      setBG1: {background:`url(${hero1})`},
-      setBG2: {background:`url(${hero2})`},
-      setBG3: {background:`url(${hero3})`},
-    };
+        return {
+        setBG1: {background:`url(${hero1})`},
+        setBG2: {background:`url(${hero2})`},
+        setBG3: {background:`url(${hero3})`},
+        };
   },
+  
 }
 </script>
 
