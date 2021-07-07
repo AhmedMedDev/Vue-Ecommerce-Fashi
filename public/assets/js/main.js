@@ -9,7 +9,6 @@
 
 'use strict';
 
-(function ($) {
 
     /*------------------
         Preloader
@@ -246,5 +245,3 @@
 		}
 		$button.parent().find('input').val(newVal);
 	});
-
-})(jQuery);

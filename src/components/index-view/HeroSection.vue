@@ -4,8 +4,8 @@
             <carousel
                 :loop= "true" :margin= "0"
                 :nav= "false" :items= "1"
-                :dots= "false" 
-                :smartSpeed= "1200"
+                :dots= "false" :smartSpeed= "1200" 
+                
                 :autoHeight= "false"  :autoplay= "true">
                     <div class="single-hero-items set-bg" :style="setBG1">
                         <div class="container">
@@ -61,7 +61,7 @@
 </template>
 
 <script>
-
+// :animateIn= 'fadeIn' :animateOut= 'fadeOut'
 import carousel from 'vue-owl-carousel'
 import hero1 from '../../../public/assets/img/hero-1.jpg';
 import hero2 from '../../../public/assets/img/hero-2.jpg';
@@ -72,9 +72,9 @@ export default {
     data() 
     {
         return {
-        setBG1: {background:`url(${hero1})`},
-        setBG2: {background:`url(${hero2})`},
-        setBG3: {background:`url(${hero3})`},
+            setBG1: {background:`url(${hero1})`},
+            setBG2: {background:`url(${hero2})`},
+            setBG3: {background:`url(${hero3})`},
         };
   },
   
