@@ -139,8 +139,7 @@ export default {
         return {
             setBG: {background:`url(${women_large1})`},      
         };
-  },
-
+    },
 }
 </script>
 
